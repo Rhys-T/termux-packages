@@ -85,7 +85,6 @@ termux_step_configure() {
 	QEMU_TARGETS+="riscv64-softmmu,"
 	QEMU_TARGETS+="x86_64-softmmu"
 
-	CPPFLAGS+=" -D__TERMUX__=1"
 	CFLAGS+=" $CPPFLAGS"
 	CXXFLAGS+=" $CPPFLAGS"
 	LDFLAGS+=" -landroid-shmem -llog"

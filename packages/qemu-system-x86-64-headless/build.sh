@@ -70,7 +70,6 @@ termux_step_configure() {
 	QEMU_TARGETS+="riscv64-linux-user,"
 	QEMU_TARGETS+="x86_64-linux-user"
 
-	CPPFLAGS+=" -D__TERMUX__=1"
 	CFLAGS+=" $CPPFLAGS"
 	CXXFLAGS+=" $CPPFLAGS"
 	LDFLAGS+=" -landroid-shmem -llog"
